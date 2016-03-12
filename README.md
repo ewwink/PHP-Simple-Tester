@@ -7,10 +7,15 @@ This is very **simple PHP Tester** for testing or compile PHP code snippet direc
 * Custom error messages handler 
 * lightweight
 
+###Installation
+* Download and extract [this zip](https://github.com/ewwink/PHP-Simple-Tester/archive/master.zip) to your web directory
+* Make sure the directory is writable because it will create temporary file *"php_inc.txt"* every time the code executed. 
+
 ### Warning!
-There are no functions limit or filter, use it only on localhost or use it at your own risk.
+There are no functions limit or filter, use it only on Localhost or use it at your own risk.
 
 ----------
 by: [cekPR](http://www.cekpr.com)
+
 
 
