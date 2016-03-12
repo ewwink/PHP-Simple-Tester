@@ -1,0 +1,119 @@
+html, body,#action ul{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: #eee;
+  font: small arial, sans-serif;
+  color: #545454;
+}
+a{
+  color: #6b8fce;
+  text-decoration: none;
+}
+a:visited{
+  color: #6b8fce;
+}
+a:hover{
+  color: #4c4cc3;
+}
+#wrap{
+  overflow: hidden;
+  max-width: 1100px;
+  min-height: 200px;
+  position: relative;
+  margin: 0 auto;
+  padding: 5px 0;
+  background: #fff;
+  border: 1px solid #D5D3D3;
+}
+.hand{
+  cursor: pointer;
+}
+.hide{
+  display: none;
+}
+#input {
+  width: 49%;
+  min-width: 355px;
+}
+#input textarea{
+  width: 84%;
+  min-height: 300px;
+}
+#output{
+  width: 49%;
+  min-width: 355px;
+}
+#output textarea{
+  width: 97%;
+  min-height: 300px;
+}
+#lineNum {
+  margin: 0 0 0 5px;
+  padding: 0;
+  border: 1px solid #a8a7cc;
+  background-color: #dbdbec;
+  width: 40px;
+  display: block;
+/* padding-bottom: 4%; */
+}
+.copy{ text-align: right; }
+#lineNum ol{
+  margin: 0px;
+  padding-top: 3px;
+}
+#lineNum ol li {
+  font-size: 12px;
+  line-height: 16px;
+}
+textarea {
+  font-size: 13px;
+  line-height: 16px;
+  border: 1px solid #eee;
+  border-radius: 2px;
+  background: #F8F8F8;
+  padding: 2px 4px;
+}
+input[type=button]:hover, input[type=submit]:hover{
+  background: #f9f9f9;
+  border: 1px solid #94BEF5;
+  box-shadow: 1px 2px 1px #dac6c6;
+}
+input[type=button], input[type=submit]{
+  border: solid 1px #DCDCDC;
+  margin: 0px 3px;
+  padding: 1px 4px 2px;
+  cursor: pointer;
+}
+.m15{
+  margin: 0 15px;
+}
+h1{
+  font-size: 16px;
+  margin: 0 10px;
+  text-align: center;
+}
+p{
+  margin: 5px;
+  padding: 5px;
+}
+.ctr{
+  text-align: center;
+}
+#compile{
+  font-size: 16px;
+  font-weight: bold;
+  padding: 3px 5px 5px;
+  clear: both;
+  margin: 10px;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.clear{
+  clear: both;
+}
