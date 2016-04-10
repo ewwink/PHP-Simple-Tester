@@ -44,5 +44,6 @@ function error_handler($output) {
   }
   return $output;
 }
-
+if(!isset($_POST['disable_ob']))
+  ob_get_flush();
 ?>
