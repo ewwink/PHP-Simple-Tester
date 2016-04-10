@@ -1,12 +1,12 @@
 $("#compile").on("click", function() {
   $("#compile").prop("disabled", true);
   var compile = btoa($("#input_code").val());
+  var disable_ob = $("#disable_ob").prop("checked");
+  var datas = disable_ob ? {"compile": compile, "disable_ob": "true"} : {"compile": compile};
   $.ajax({
     url: "ajax.php",
     type: "POST",
-    data: {
-      "compile": compile
-    },
+    data: datas,
     success: function(d) {
       $("#output_code").val(d);
       $("#compile").prop("disabled", false);
@@ -103,4 +103,7 @@ $(document).on("ready", function() {
 });
 $(window).resize(function() {
   resizeTxt()
+});
+$('#wrap_text').on("click", function(){
+  $("#wrap_text").prop("checked") ? $("#output_code").prop("wrap", "soft") : $("#output_code").prop("wrap", "off");
 });

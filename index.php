@@ -19,19 +19,20 @@
       <p><strong>Input:</strong> &lt;?php</p>
 
       <div id="lineNum" class="left">
-         <ol id="listNum"><li></li><li></li><li></li><li></li></ol>
+         <ol id="listNum" start="2"><li></li><li></li><li></li><li></li></ol>
       </div>
       <textarea id="input_code" class="left" spellcheck="false" wrap="off">$arr = array("hello", "world!");
 print_r($arr);
       </textarea>
 
-      <p class="ctr clear"><input type="button" value="compile (Ctrl + Enter)" id="compile"><br>
+      <p class="ctr clear">disable ob_start? <input type="checkbox" id="disable_ob"><input type="button" value="compile (Ctrl + Enter)" id="compile"><br>
       <input type="button" value="Clear Input Code" id="clearTxt"></p>
     </div>
 
     <div id="output" class="left">
       <p><strong>Output:</strong></p>
-      <textarea id="output_code" spellcheck="false" wrap="off"></textarea> <br>
+      <textarea id="output_code" spellcheck="false" wrap="off"></textarea>
+      <p class="ctr clear">Wrap Text? <input type="checkbox" id="wrap_text"></p>
       <p class="copy">Copyright &copy; 2016 <a href="http://www.cekpr.com">cekPR.com</a></p>
     </div>
   </div><script src="js/jquery.min.js">

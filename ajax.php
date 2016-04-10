@@ -1,6 +1,7 @@
 <?php
 error_reporting(E_ALL);
-ob_start('error_handler');
+if(!isset($_POST['disable_ob']))
+  ob_start('error_handler');
 if(isset($_POST['compile']))
 {
   $php_data = base64_decode($_POST['compile']);
