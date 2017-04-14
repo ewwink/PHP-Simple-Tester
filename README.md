@@ -6,8 +6,9 @@ This is very **simple PHP Tester** for testing or compile PHP code snippet direc
 * Responsive Design
 * Custom error messages handler 
 * lightweight
+* save session to localStorage
 
-###Installation
+### Installation
 * Download and extract [this zip](https://github.com/ewwink/PHP-Simple-Tester/archive/master.zip) to your web directory
 * Make sure the directory is writable because it will create temporary file *"php_inc.txt"* every time the code executed. 
 

